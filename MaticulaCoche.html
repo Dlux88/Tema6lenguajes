@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula del coche</title>
+</head>
+
+<body>
+    <form action="proceso.php" method="post">
+        <!--Fieldset ->permite organizar en grupos los campos de un formulario-->
+        <fieldset>
+            <!-- Titulo de la tabla en negro-->
+            <legend><b>Datos personales</b></legend>
+
+            <p>nombre <input type="text"></p>
+            <p>Fecha <input type="date"></p>
+            <p>Edad <input type="number"></p>
+            <p>correo <input type="Email"></p>
+
+
+
+
+        </fieldset>
+        <fieldset>
+
+            <b> Datos de interes</b>
+            <p>Estas casado
+                <input type="radio" name="p1"> Si
+                <input type="radio" name="p1"> No
+            </p>
+            <p>Numero de hijos <input type="number" min="0" max="6" size="3" ></p>
+            <p>sueldo : ("entre 1000 y 2000") <input type="range" min="1000" max="2000" step="100"></p>
+
+            <p>Deportes:
+
+                <input type="checkbox" name="p2">Futbol
+                <input type="checkbox" name="p2"> Tennis
+                <input type="checkbox" name="p2">Boxeo
+
+            </p>
+
+
+            <p>Que color te gusta <input type="color" ></p>
+            <p>Matricula del coche : <input type="text" pattern="\d{4}[A-Z]{3}"></p>
+            <p>Porcentaje del proyecto finalizado <progress max="100" value="35"> </p>
+
+
+        </fieldset>
+        <br>
+        <input type="submit"value="Enviar">
+    </form>
+</body>
+
+</html>
